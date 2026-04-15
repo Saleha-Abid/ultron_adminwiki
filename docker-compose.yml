@@ -1,0 +1,29 @@
+version: "3"
+services:
+  db:
+    image: postgres:15-alpine
+    environment:
+      POSTGRES_DB: wikijs
+      POSTGRES_PASSWORD: wikijsrocks # Change this to something secure
+      POSTGRES_USER: wikijs
+    restart: unless-stopped
+    volumes:
+      - ./db-data:/var/lib/postgresql/data
+
+  wiki:
+    image: ghcr.io/requarks/wiki:2
+    depends_on:
+      - db
+    environment:
+      DB_TYPE: postgres
+      DB_HOST: db
+      DB_PORT: 5432
+      DB_USER: wikijs
+      DB_PASS: wikijsrocks # Must match the password above
+      DB_NAME: wikijs
+    restart: unless-stopped
+    ports:
+      - "7231:3000"  # Changed from 80:3000 to 8080:3000
+    volumes:
+      - ./config:/wiki/config
+      - /home/admin_ultron/.ssh:/root/.ssh:ro
