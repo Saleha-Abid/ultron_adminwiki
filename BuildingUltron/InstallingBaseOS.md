@@ -2,8 +2,8 @@
 title: Installing Base OS
 description: Laying the OS groundwork for the cluster
 published: true
-date: 2026-04-17T19:03:08.720Z
-tags: ubuntu, os, base os, os installation
+date: 2026-04-17T19:03:33.487Z
+tags: ubuntu, os, base os, os installation, ssh
 editor: markdown
 dateCreated: 2026-04-17T12:12:14.893Z
 ---
