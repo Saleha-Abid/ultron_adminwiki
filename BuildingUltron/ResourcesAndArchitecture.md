@@ -2,7 +2,7 @@
 title: Resources and Architecture
 description: Understanding available resources and conceptualizing the architecture
 published: true
-date: 2026-04-17T16:27:56.094Z
+date: 2026-04-17T18:16:19.997Z
 tags: ultron, resources, architecture, concept
 editor: markdown
 dateCreated: 2026-04-17T05:14:44.074Z
@@ -89,7 +89,7 @@ Each node in the cluster has a static IP. This is for a two main reasons,
 Given below is a summary of the network details,
 | Specification | Details |
 | :--- | :--- |
-| **IP Block** | 192.168.24.121-192.168.24.136 (13 addreses) |
+| **IP Block** | 192.168.24.x-192.168.24.y (13 addreses - *Confidential*) |
 | **Gateway** | 192.168.24.254 |
 | **Subnet** | 255.255.255.0 |
 | **DNS** | 8.8.8.8, 8.8.4.4 |
