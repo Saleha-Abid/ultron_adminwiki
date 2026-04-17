@@ -2,7 +2,7 @@
 title: Resources and Architecture
 description: Understanding available resources and conceptualizing the architecture
 published: true
-date: 2026-04-17T05:30:26.984Z
+date: 2026-04-17T05:32:18.231Z
 tags: ultron, resources, architecture, concept
 editor: markdown
 dateCreated: 2026-04-17T05:14:44.074Z
