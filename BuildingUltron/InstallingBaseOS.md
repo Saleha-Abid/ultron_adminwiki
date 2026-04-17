@@ -2,7 +2,7 @@
 title: Installing Base OS
 description: Laying the OS groundwork for the cluster
 published: true
-date: 2026-04-17T18:51:56.808Z
+date: 2026-04-17T18:52:31.463Z
 tags: ubuntu, os, base os, os installation
 editor: markdown
 dateCreated: 2026-04-17T12:12:14.893Z
@@ -175,7 +175,7 @@ SSH, as a sysadmin should be so that you can remotely access all nodes of your c
 
 Now that the groundwork is laid, let's configure our planned architecture for storage.
 
-Next: [Managing Storage; Setting up DRBD]()
+Next: [Managing Storage: Setting up DRBD]()
 
 
 
