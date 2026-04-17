@@ -2,7 +2,7 @@
 title: Resources and Architecture
 description: Understanding available resources and conceptualizing the architecture
 published: true
-date: 2026-04-17T16:27:06.348Z
+date: 2026-04-17T16:27:56.094Z
 tags: ultron, resources, architecture, concept
 editor: markdown
 dateCreated: 2026-04-17T05:14:44.074Z
@@ -71,7 +71,7 @@ Here is the solution we came up with,
 - Configure the HDD of raven02 (head02 - backup head node) as the network RAID disk for the raven01's HDD. It is its exact copy. For redundancy and backup.
 
 What about the speed? It is a HUGE bottleneck. Well, the users don't necessarily have to always use this HDDs. They can,
-1. Use the space in their `/home` folder. This is very limited (look at 512GB Ravens!).
+1. Use the space in their `/home/user` folder. This is very limited (look at 512GB Ravens!).
 2. Use the space on the compute nodes SSD (a sweet 2TB). They call it 'scratch space'. You copy it, when you are done you delete it. Or we do. How do you copy if you can't access the compute nodes? Well, you write to HDD first and then copy to the local SSD (using slurm batch files - more on that later).
 3. Keep the larger files on the Hard Disks.
 
