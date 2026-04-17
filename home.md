@@ -2,7 +2,7 @@
 title: Introducing Ultron
 description: A short and formal getting-to-know Ultron
 published: true
-date: 2026-04-17T05:25:24.493Z
+date: 2026-04-17T12:10:36.516Z
 tags: intro, introduction, basics, hpc, ultron
 editor: markdown
 dateCreated: 2026-04-16T17:52:00.837Z
@@ -43,6 +43,6 @@ The next time you think about training an AI model locally on your consumer-grad
 - Ultron supports requests for usage of the HPC in other dimensions. In this light, requests for custom software can be raised.
 
 ## Building Ultron
-This site is meant for sysadmins and sysadmins-in-making. We provide detailed documentation from base OS installation to all sorts of configurations. Ready to start?
+This site is meant for sysadmins and sysadmins-in-making. We provide detailed documentation from base OS installation to all sorts of configurations. [Ready to Start?](/BuildingUltron/ResourcesAndArchitecture)
 
 
