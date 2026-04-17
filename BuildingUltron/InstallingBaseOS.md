@@ -2,7 +2,7 @@
 title: Installing Base OS
 description: Laying the OS groundwork for the cluster
 published: true
-date: 2026-04-17T18:56:35.716Z
+date: 2026-04-17T19:03:08.720Z
 tags: ubuntu, os, base os, os installation
 editor: markdown
 dateCreated: 2026-04-17T12:12:14.893Z
@@ -88,7 +88,7 @@ Configure as follows,
 | **Pick a username** | admin_ultron |
 | **Choose a password** | *confidential - ask sysadmins*  |
 
-As it stands ***admin_ultron***, is the administrator account on Ultron. It has no password set on sudo. It is junior only to the root user. It is the first user account we create on Ultron. This account has remote shell (ssh) access even on compute nodes. It is most powerful.
+As it stands ***admin_ultron***, is the administrator account on Ultron. It has no password set on sudo. It is junior only to the root user. It is the first user account we create on Ultron. This account has remote shell (SSH) access even on compute nodes. It is most powerful.
 
 After this,
 - Do not upgrade to *Ubuntu Pro*.
