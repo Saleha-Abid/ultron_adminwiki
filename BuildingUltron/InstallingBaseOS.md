@@ -2,7 +2,7 @@
 title: Installing Base OS
 description: Laying the OS groundwork for the cluster
 published: true
-date: 2026-04-17T18:48:00.672Z
+date: 2026-04-17T18:51:56.808Z
 tags: ubuntu, os, base os, os installation
 editor: markdown
 dateCreated: 2026-04-17T12:12:14.893Z
@@ -161,15 +161,21 @@ After you have configured SSH (and no longer need the user password to admin_ult
 ```bash
 sudo vim /etc/ssh/sshd_config.d/50-cloud-init.conf
 ```
-Set the one-liner to,
+Set the one-liner to, (this setting is obviously only for admin_ultron - more on user accounts later)
 ```bash
 PasswordAuthentication no
 ```
 ## Summing Up
-This page walked you through the steps of base OS installation and a couple follow-up steps involving installing basic packages and configuring SSH. If you are building a cluster from scratch, you must be performing this step multiple times. SSH, as a sysadmin should be so that you can remotely access all nodes of your cluster through the admin_ultron account. What about the intra-cluster remote access?
+This page walked you through the steps of base OS installation and a couple follow-up steps involving installing basic packages and configuring SSH. If you are building a cluster from scratch, you must be performing this step multiple times. Cut down your work by using **Ansible Playbook**.
+
+SSH, as a sysadmin should be so that you can remotely access all nodes of your cluster through the admin_ultron account. What about the intra-cluster remote access?
 - Sysadmin able to SSH into all nodes (as admin_ultron through keys)
 - End-users able to SSH into login/head nodes (as user accounts through passwords)
 - Login/head nodes able to SSH into compute nodes and each other (as admin_ultron through keys)
+
+Now that the groundwork is laid, let's configure our planned architecture for storage.
+
+Next: [Managing Storage; Setting up DRBD]()
 
 
 
