@@ -2,7 +2,7 @@
 title: Resources and Architecture
 description: Understanding available resources and conceptualizing the architecture
 published: true
-date: 2026-04-17T16:24:29.078Z
+date: 2026-04-17T16:25:21.497Z
 tags: ultron, resources, architecture, concept
 editor: markdown
 dateCreated: 2026-04-17T05:14:44.074Z
@@ -117,7 +117,7 @@ We hope these arrangements will suffice for our current requirements.
 ## Summing Up
 You must now have a thorough idea of what is available to us and how we plan to use it in our goal of building an HPC. Let's move on to the practical stuff.
 
-[Next: Installing Base OS](/BuildingUltron/InstallingBaseOS)
+Next: [Installing Base OS](/BuildingUltron/InstallingBaseOS)
 
 
 
