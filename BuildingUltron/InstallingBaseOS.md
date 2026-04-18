@@ -2,7 +2,7 @@
 title: Installing Base OS
 description: Laying the OS groundwork for the cluster
 published: true
-date: 2026-04-17T19:03:33.487Z
+date: 2026-04-18T05:33:41.909Z
 tags: ubuntu, os, base os, os installation, ssh
 editor: markdown
 dateCreated: 2026-04-17T12:12:14.893Z
@@ -61,7 +61,7 @@ We will be configuring storage manually. The steps are as follows,
 | :--- | :--- |
 | **Size** | *Add Nothing* |
 | **Format** | ext4 |
-| **Mount** | `/home` |
+| **Mount** | `/home` (on login nodes) `/scratch` (on compute nodes)|
 7. SSD is configured successfully. Now for the HDD - ***if you are configuring the Ravens (head nodes) otherwise skip this step***: Select the disk, select *Create Partition*, configure as below,
 
 | Specification | Details |
