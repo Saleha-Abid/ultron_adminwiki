@@ -2,7 +2,7 @@
 title: Importing and Configuring Dashboards
 description: Monitor Ultron's status through customized dashboards
 published: true
-date: 2026-04-21T06:22:19.998Z
+date: 2026-04-21T06:52:15.973Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T18:26:46.709Z
@@ -28,4 +28,4 @@ If you want to start afresh, you can check out **node_exporter's** and **slurm's
 4. Happy customizing!
 
 ## Summing Up
-The dashboards are up! Now you can monitor Ultron is peace and troubleshoot easily.
+The dashboards are up! Now you can monitor Ultron in peace and troubleshoot easily.
