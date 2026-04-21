@@ -2,7 +2,7 @@
 title: Exporting Data from Nodes
 description: Starting services on all nodes to be sent to the dashboard
 published: true
-date: 2026-04-21T05:16:15.668Z
+date: 2026-04-21T05:16:47.292Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T18:25:16.577Z
@@ -70,7 +70,7 @@ curl http://localhost:6817/metrics/nodes
 content
 
 ## Summing Up
-All our sensors are working perfectly! Now that we're done with prometheus, we must work with Grafana to build dashboards.
+All our sensors are working perfectly! Now that we're done with Prometheus, we must work with Grafana to build dashboards.
 
 Next: [Importing And Configuring Dashboards](/MonitoringUltron/ImportingAndConfiguringDashboards)
 
