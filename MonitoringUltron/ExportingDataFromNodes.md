@@ -2,7 +2,7 @@
 title: Exporting Data from Nodes
 description: Starting services on all nodes to be sent to the dashboard
 published: true
-date: 2026-04-21T05:14:46.409Z
+date: 2026-04-21T05:16:15.668Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T18:25:16.577Z
@@ -35,8 +35,8 @@ Then start the service,
 sudo systemctl daemon-reload
 sudo systemctl enable --now node_exporter
 ```
-> `node_exporter` exports metrics on the port 9100.
-{.is-info}
+> ***Note:*** `node_exporter` exports metrics on the port 9100.
+{.is-success}
 
 To check if it works, on each node
 
@@ -58,8 +58,8 @@ Then restart `slurmctld` service on the head nodes. Remember, while the `node_ex
 sudo systemctl restart slurmctld
 ```
 
-> Slurm exports data on port 6817
-{.is-info}
+> ***Note:*** Slurm exports data on port 6817
+{.is-success}
 
 To chek if data is being exported,
 ```bash
