@@ -2,11 +2,75 @@
 title: Exporting Data from Nodes
 description: Starting services on all nodes to be sent to the dashboard
 published: true
-date: 2026-04-20T18:25:16.577Z
+date: 2026-04-21T05:14:46.409Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T18:25:16.577Z
 ---
 
-# Header
-Your content here
+# Collecting Data
+Now that your containers are up, let's start collecting data. We need three categories of data,
+1. General node reports.
+2. Slurm reports.
+3. GPU reports.
+
+This page guides you to exporting each one, one by one.
+
+## General Node Reports
+We need a service running on each node. This service is called `node_exporter`. On each node, run:
+```bash
+wget https://github.com/prometheus/node_exporter/releases/download/v1.8.2/node_exporter-1.8.2.linux-amd64.tar.gz
+tar xvf node_exporter-1.8.2.linux-amd64.tar.gz
+sudo mv node_exporter-1.8.2.linux-amd64/node_exporter /usr/local/bin/
+```
+
+Next, you must edit the config file. 
+```bash
+sudo vim /etc/systemd/system/node_exporter.service
+```
+Copy the `node_exporter.service` from [this Github Repo](https://github.com/Saleha-Abid/ultron.git). 
+
+Then start the service,
+```bash
+sudo systemctl daemon-reload
+sudo systemctl enable --now node_exporter
+```
+> `node_exporter` exports metrics on the port 9100.
+{.is-info}
+
+To check if it works, on each node
+
+```bash
+curl http://localhost:9100/metrics
+```
+
+## Slurm Reports
+To collect data from slurm, simply edit the `slurm.conf` file on each node. Add these two lines,
+
+```bash
+SlurmctldParameters=enable_prometheus
+MetricsType=metrics/openmetrics
+```
+
+Then restart `slurmctld` service on the head nodes. Remember, while the `node_exporter` collected data from each node separately, we'll only be ask the primary head node for slurm reports.
+
+```bash
+sudo systemctl restart slurmctld
+```
+
+> Slurm exports data on port 6817
+{.is-info}
+
+To chek if data is being exported,
+```bash
+curl http://localhost:6817/metrics/nodes
+```
+
+## GPU Reports
+content
+
+## Summing Up
+All our sensors are working perfectly! Now that we're done with prometheus, we must work with Grafana to build dashboards.
+
+Next: [Importing And Configuring Dashboards](/MonitoringUltron/ImportingAndConfiguringDashboards)
+
