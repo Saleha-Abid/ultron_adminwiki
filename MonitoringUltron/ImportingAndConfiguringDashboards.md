@@ -2,7 +2,7 @@
 title: Importing and Configuring Dashboards
 description: Monitor Ultron's status through customized dashboards
 published: true
-date: 2026-04-21T05:32:07.526Z
+date: 2026-04-21T06:22:19.998Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T18:26:46.709Z
@@ -23,7 +23,7 @@ Since we have already built on the existing panels to best suit the needs of mon
 If you want to start afresh, you can check out **node_exporter's** and **slurm's** standard dashboards. For this,
 
 1. Login to Grafana as the admin. In the **Dashboard** section, click **New** and select **Import** from the drop-down.
-2. There is an input box titled **Find and import dashboards for common applications**. Under this add the ID `1860` for node_exporter and `24979` for Slurm.
+2. There is an input box titled **Find and import dashboards for common applications**. Under this add the ID `1860` for node_exporter, `24979` for Slurm and `12239` for nvidia/dcgm-exporter.
 3. **Load** the dashboards. Name them appropriated and fix **UID conflicts** if any.
 4. Happy customizing!
 
