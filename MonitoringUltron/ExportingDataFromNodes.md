@@ -2,7 +2,7 @@
 title: Exporting Data from Nodes
 description: Starting services on all nodes to be sent to the dashboard
 published: true
-date: 2026-04-21T05:16:47.292Z
+date: 2026-04-21T05:46:52.634Z
 tags: 
 editor: markdown
 dateCreated: 2026-04-20T18:25:16.577Z
@@ -67,7 +67,33 @@ curl http://localhost:6817/metrics/nodes
 ```
 
 ## GPU Reports
-content
+As opposed to config files that we used to collect data for the two categories above, we'll be using containerized to collect data for GPUs. As head nodes do not use their GPUs in the cluster's computation, their logs are unnecessary. On the compute nodes, install the necessary toolkits,
+
+```bash
+sudo apt install -y nvidia-container-toolkit
+sudo nvidia-ctk runtime configure --runtime=docker
+```
+
+Then, start the containers,
+```bash
+sudo systemctl restart docker
+sudo docker run -d   --name gpu-exporter   --restart always   --gpus all   -p 9400:9400   nvidia/dcgm-exporter:latest
+```
+
+To check if the containers are up,
+```bash
+sudo docker ps
+```
+`nvidia/dcgm-exporter` should be listed. 
+
+> ***Note:*** `nvidia/dcgm-exporter` exports data on port 9400
+{.is-success}
+
+
+To check the metrics being exported, run on the compute nodes,
+```bash
+curl http://localhost:9400/metrics
+```
 
 ## Summing Up
 All our sensors are working perfectly! Now that we're done with Prometheus, we must work with Grafana to build dashboards.
