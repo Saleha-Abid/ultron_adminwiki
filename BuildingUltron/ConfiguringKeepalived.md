@@ -2,7 +2,7 @@
 title: Managing Storage: Configuring Keepalived
 description: Keepalived keeps track of your head nodes dying.
 published: true
-date: 2026-04-22T13:43:50.462Z
+date: 2026-04-22T17:03:09.313Z
 tags: storage, drbd, file systems, keepalived, fail-safe, backup
 editor: markdown
 dateCreated: 2026-04-22T07:03:19.171Z
@@ -18,7 +18,7 @@ sudo apt update && sudo apt install keepalived -y
 ```
 Next, copy the configuration files from [this Github repository](https://github.com/Saleha-Abid/ultron.git). Go to `/etc/keepalived` and copy the `keepalived.conf` there for both nodes respectively.
 ```bash
-sudo vim /etc/keepalived/keepalived.conf
+sudo nano /etc/keepalived/keepalived.conf
 ```
 Then create a folder `scripts` in `/etc/keepalived`.
 ```bash
@@ -26,8 +26,8 @@ sudo mkdir /etc/keepalived/scripts
 ```
 From the Github repository linked above, check out the scripts folder under each node. Copy `go_primary.sh` and `go_secondary.sh` to their respective nodes.
 ```bash
-sudo vim /etc/keepalived/scripts/go_primary.sh
-sudo vim /etc/keepalived/scripts/go_secondary.sh
+sudo nano /etc/keepalived/scripts/go_primary.sh
+sudo nano /etc/keepalived/scripts/go_secondary.sh
 ```
 > ***Look Out!*** 
 Check the scripts. There are some lines at the end of which is a comment '*comment these out for now*'. Comment them because we haven't configured NFS and lsyncd yet.
