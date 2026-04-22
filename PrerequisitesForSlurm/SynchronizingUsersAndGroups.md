@@ -2,7 +2,7 @@
 title: Synchronizing Users and Groups
 description: UIDs and GIDs must be same across the cluster
 published: true
-date: 2026-04-22T16:54:42.411Z
+date: 2026-04-22T16:55:19.948Z
 tags: sync, gid, uid, users
 editor: markdown
 dateCreated: 2026-04-22T13:58:40.123Z
@@ -38,6 +38,6 @@ sudo usermod -u 1000 -g 1000 admin_ultron
 ```
 
 ## Summing Up
-In the future, the slurm user shall also be synced and so will all the end-users to this HPC.
+In the future, the slurm user shall also be synced and so will all the end-users to this HPC. If you find it tiring running the same commands on all nodes separately, try Ansible Playbook.
 
 Next: [Configuring Hosts](/PrerequisitesForSlurm/ConfiguringHosts)
