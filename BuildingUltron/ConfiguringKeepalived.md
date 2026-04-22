@@ -2,7 +2,7 @@
 title: Managing Storage: Configuring Keepalived
 description: Keepalived keeps track of your head nodes dying.
 published: true
-date: 2026-04-22T11:27:46.970Z
+date: 2026-04-22T13:43:50.462Z
 tags: storage, drbd, file systems, keepalived, fail-safe, backup
 editor: markdown
 dateCreated: 2026-04-22T07:03:19.171Z
@@ -30,7 +30,7 @@ sudo vim /etc/keepalived/scripts/go_primary.sh
 sudo vim /etc/keepalived/scripts/go_secondary.sh
 ```
 > ***Look Out!*** 
-Check the scripts. There are some lines at the end of which is a comment '*comment these out for now*'. Comment them out because we haven't configured NFS and lsyncd yet.
+Check the scripts. There are some lines at the end of which is a comment '*comment these out for now*'. Comment them because we haven't configured NFS and lsyncd yet.
 {.is-warning}
 
 On both nodes make the scripts executable by running,
