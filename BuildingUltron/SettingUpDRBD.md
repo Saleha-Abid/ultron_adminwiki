@@ -2,7 +2,7 @@
 title: Managing Storage: Setting Up DRBD
 description: Configure a network RAID - DRBD (Distributed Replicated Block Device)
 published: true
-date: 2026-04-22T05:30:38.093Z
+date: 2026-04-22T05:38:22.025Z
 tags: storage, managing storage, drbd, file systems
 editor: markdown
 dateCreated: 2026-04-17T18:54:14.049Z
@@ -45,3 +45,14 @@ watch -n1 cat /proc/drbd
 sudo mkfs.ext4 /dev/drbd0
 sudo mount /dev/drbd0 /data
 ```
+
+## Some Pointers
+DRBD is super fussy. Here is why we say that,
+> ***Rule:*** Only one of the two heads, can mount their disks at a time. Moreover, it has to be the one with the **Primary** role.
+{.is-info}
+
+You must first demote primary to secondary, the unmount then promote the second head from secondary to primary and mount its drive. This is the fail-safe logic's tripping point that we must be cautious of later.
+
+##
+
+
