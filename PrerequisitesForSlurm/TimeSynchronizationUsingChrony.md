@@ -2,7 +2,7 @@
 title: Time Synchronization Using Chrony
 description: All nodes must be very closed synced in time.
 published: true
-date: 2026-04-22T16:04:29.738Z
+date: 2026-04-22T17:02:20.839Z
 tags: slurm, chrony, time, sync, ntp
 editor: markdown
 dateCreated: 2026-04-22T13:53:05.916Z
@@ -43,15 +43,15 @@ local stratum 10
 ```
 On raven02,
 ```bash
-server 192.168.24.121 iburst
+server 192.168.24.x iburst #include raven01's ip
 
 allow 192.168.24.0/24
 local stratum 11
 ```
 On the compute nodes,
 ```bash
-server 192.168.24.121 iburst 
-server 192.168.24.122 iburst
+server 192.168.24.x iburst #include raven01's ip
+server 192.168.24.x iburst #include raven02's ip
 ```
 Now on all of them run,
 ```bash
