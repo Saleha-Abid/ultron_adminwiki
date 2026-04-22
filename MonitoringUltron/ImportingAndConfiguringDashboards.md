@@ -2,8 +2,8 @@
 title: Importing and Configuring Dashboards
 description: Monitor Ultron's status through customized dashboards
 published: true
-date: 2026-04-21T16:42:13.740Z
-tags: 
+date: 2026-04-22T06:59:29.441Z
+tags: prometheus, grafana, dashboards, monitoring
 editor: markdown
 dateCreated: 2026-04-20T18:26:46.709Z
 ---
