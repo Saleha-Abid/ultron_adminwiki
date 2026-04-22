@@ -2,7 +2,7 @@
 title: Importing and Configuring Dashboards
 description: Monitor Ultron's status through customized dashboards
 published: true
-date: 2026-04-22T07:01:02.315Z
+date: 2026-04-22T07:01:18.343Z
 tags: prometheus, grafana, dashboards, monitoring
 editor: markdown
 dateCreated: 2026-04-20T18:26:46.709Z
@@ -15,7 +15,7 @@ The final step in this section is to build the visual - beautiful dashboards tha
 Since we have already built on the existing panels to best suit the needs of monitoring Ultron, you don't need to work much. Just import the JSON file and your dashboard is up!
 
 1. Go to [this Github Repository](https://github.com/Saleha-Abid/Grafana-Dashboards.git).You'll find the JSON files. Clone the repo or download them.
-> ***Note:*** Grafana allows provisioning which basically allows you to back-up your dashboards somewhere. We used git. Ultron's dashboards are synced to this repo.
+> ***Note:*** Grafana allows provisioning which basically allows you to back-up your dashboards somewhere. We used Github. Ultron's dashboards are synced to this repo.
 {.is-success}
 
 2. On Grafana (go to `raven02-ip:3000` and login as admin), go to the **Dashboards** section. Top-right, you'll find **New**. Select **Import** from the drop-down list.
