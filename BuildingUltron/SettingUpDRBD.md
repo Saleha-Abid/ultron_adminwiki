@@ -2,7 +2,7 @@
 title: Managing Storage: Setting Up DRBD
 description: Configure a network RAID - DRBD (Distributed Replicated Block Device)
 published: true
-date: 2026-04-22T06:53:08.388Z
+date: 2026-04-22T11:28:34.969Z
 tags: storage, managing storage, drbd, file systems
 editor: markdown
 dateCreated: 2026-04-17T18:54:14.049Z
@@ -46,7 +46,8 @@ sudo mkfs.ext4 /dev/drbd0
 sudo mount /dev/drbd0 /data
 ```
 
-> Make sure `/data` exists on both head nodes prior to mounting it. By default, `admin_ultron` can write to it and we'll keep it that way.
+> ***Look Out!***
+Make sure `/data` exists on both head nodes prior to mounting it. By default, `admin_ultron` can write to it and we'll keep it that way.
 {.is-warning}
 
 
@@ -65,5 +66,5 @@ Yes, this causes the two nodes to become STANDALONE. Manual connection is requir
 ## Summing Up
 We have completed the first step in building our filesystem: ensuring redundancy. The fail-self logic for when our primary node dies and when it comes back up must be implemented.
 
-Next: 
+Next: [Configuring Keepalived](/BuildingUltron/ConfiguringKeepalived)
 
