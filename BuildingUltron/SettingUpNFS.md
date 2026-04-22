@@ -2,7 +2,7 @@
 title: Managing Storage: Setting Up NFS
 description: Broadcast your filesystem across the cluster.
 published: true
-date: 2026-04-22T13:43:23.545Z
+date: 2026-04-22T15:38:05.704Z
 tags: storage, drbd, file systems, nfs, network
 editor: markdown
 dateCreated: 2026-04-22T07:04:45.478Z
@@ -65,5 +65,5 @@ df -h
 ## Summing Up
 Our filesystem is now live. Check by creating files and viewing them from other nodes. If everything went smoothly, there should be no problems.
 
-Next: 
+Next: [Prerequisites for Slurm](/PrerequisitesForSlurm/TimeSynchronizationUsingChrony)
 
