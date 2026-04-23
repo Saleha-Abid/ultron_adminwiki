@@ -2,7 +2,7 @@
 title: Configuring Hosts
 description: Make the nodes known by name, not IP
 published: true
-date: 2026-04-22T17:01:10.397Z
+date: 2026-04-23T05:11:07.170Z
 tags: hosts, ip
 editor: markdown
 dateCreated: 2026-04-22T13:59:56.318Z
@@ -28,4 +28,4 @@ And that's it.
 ## Summing Up
 We have officially completed all Slurm prerequisites. Slurm is ready to be configured now.
 
-Next: 
+Next: [Bringing Up Slurm](/BringingUpSlurm/InstallingTheRightSlurmDaemons)
