@@ -2,7 +2,7 @@
 title: Editing Config Files
 description: .conf files are what make up Slurm.
 published: true
-date: 2026-04-23T04:39:43.097Z
+date: 2026-04-23T04:44:49.675Z
 tags: slurm, config, slurm.conf
 editor: markdown
 dateCreated: 2026-04-23T03:26:05.244Z
@@ -40,6 +40,10 @@ To check if Slurm is really up,
 sinfo
 ```
 This should return the partition *compute* and the compute nodes.
+
+> ***Note:*** You can generate the slurm.conf using [Slurm's Configuration Generator](https://slurm.schedmd.com/configurator.html). 
+{.is-success}
+
 
 ## Summing Up
 This wraps it for bringing up Slurm. However we are still only doing everything in the present. To keep record, we must setup a database.
