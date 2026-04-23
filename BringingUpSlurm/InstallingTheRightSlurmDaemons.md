@@ -2,7 +2,7 @@
 title: Installing The Right Slurm Daemons
 description: Each node on the HPC has special daemons based on their role.
 published: true
-date: 2026-04-23T04:04:32.871Z
+date: 2026-04-23T04:23:17.185Z
 tags: slurm, daemons, slurmctld, slurmd, slurmdbd, installation
 editor: markdown
 dateCreated: 2026-04-23T03:21:18.660Z
@@ -71,3 +71,36 @@ sudo apt install slurm-smd-slurmd_*.deb slurm-smd-client_*.deb slurm-smd_*.deb
 This completes the installation. Once installed, the .deb files will disappear from the `/tmp` directory. If errors are thrown, they are most likely due to .conf files having not been set.
 
 ## Creating the Slurm User
+Remember the rule about uniform users across the cluster. These users must have the same GID and UID. On each node, create the slurm user,
+```bash
+sudo groupadd -g 1100 slurm
+sudo useradd -u 1102 -g 1100 -s /bin/false -r -M slurm
+```
+Slurm requires directories for logging and other purposes. These are not created automatically. On each node,
+```bash
+sudo mkdir -p /etc/slurm /var/log/slurm /var/run/slurm /var/spool/slurmd /var/spool/slurmctld
+```
+Set ownerships to slurm,
+```bash
+sudo chown -R slurm:slurm /etc/slurm
+sudo chown -R slurm:slurm /var/log/slurm
+sudo chown -R slurm:slurm /var/run/slurm
+sudo chown -R slurm:slurm /var/spool/slurmd
+sudo chown -R slurm:slurm /var/spool/slurmctld
+```
+Set permissions,
+```bash
+sudo chmod 755 /etc/slurm /var/log/slurm /var/run/slurm
+sudo chmod 700 /var/spool/slurmd /var/spool/slurmctld
+```
+Slurm can be fussy about non-existent file. Create some dummy files and set ownerships and permissions,
+```bash
+sudo touch /var/log/slurm/slurmd.log /var/log/slurm/slurmctld.log
+sudo chown slurm:slurm /var/log/slurm/slurmd.log /var/log/slurm/slurmctld.log
+sudo chmod 644 /var/log/slurm/slurmd.log /var/log/slurm/slurmctld.log
+```
+
+## Summing Up
+That settles it for the installation phase. Let's defeat those daemon starting-up errors by setting the config files.
+
+Next: [Editing Config Files](/BringingUpSlurm/EditingConfigFiles)
