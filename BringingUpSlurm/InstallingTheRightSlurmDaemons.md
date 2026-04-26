@@ -2,7 +2,7 @@
 title: Installing The Right Slurm Daemons
 description: Each node on the HPC has special daemons based on their role.
 published: true
-date: 2026-04-23T04:23:17.185Z
+date: 2026-04-26T09:41:14.570Z
 tags: slurm, daemons, slurmctld, slurmd, slurmdbd, installation
 editor: markdown
 dateCreated: 2026-04-23T03:21:18.660Z
@@ -54,19 +54,14 @@ Repeat this for argon02, and so on.
 
 On each node, navigate to the `/tmp` directory and run,
 ```bash
-#FOR raven01
+#FOR raven01 and raven02
 cd /tmp
-sudo apt install slurm-smd-slurmctld_*.deb slurm-smd-client_*.deb slurm-smd_*.deb slurm-smd-slurmdbd_*.deb
-```
-```bash
-#FOR raven02
-cd /tmp
-sudo apt install slurm-smd-slurmctld_*.deb slurm-smd-client_*.deb slurm-smd_*.deb 
+sudo apt install ./slurm-smd-slurmctld_*.deb ./slurm-smd-client_*.deb ./slurm-smd_*.deb ./slurm-smd-slurmdbd_*.deb
 ```
 ```bash
 #FOR all argons
 cd /tmp
-sudo apt install slurm-smd-slurmd_*.deb slurm-smd-client_*.deb slurm-smd_*.deb 
+sudo apt install ./slurm-smd-slurmd_*.deb ./slurm-smd-client_*.deb ./slurm-smd_*.deb 
 ```
 This completes the installation. Once installed, the .deb files will disappear from the `/tmp` directory. If errors are thrown, they are most likely due to .conf files having not been set.
 
