@@ -2,7 +2,7 @@
 title: Managing Storage: Setting Up DRBD
 description: Configure a network RAID - DRBD (Distributed Replicated Block Device)
 published: true
-date: 2026-04-22T17:03:33.262Z
+date: 2026-04-26T09:59:43.641Z
 tags: storage, managing storage, drbd, file systems
 editor: markdown
 dateCreated: 2026-04-17T18:54:14.049Z
