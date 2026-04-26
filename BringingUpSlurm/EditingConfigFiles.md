@@ -2,7 +2,7 @@
 title: Editing Config Files
 description: .conf files are what make up Slurm.
 published: true
-date: 2026-04-23T04:44:49.675Z
+date: 2026-04-26T10:24:11.742Z
 tags: slurm, config, slurm.conf
 editor: markdown
 dateCreated: 2026-04-23T03:26:05.244Z
@@ -12,7 +12,7 @@ dateCreated: 2026-04-23T03:26:05.244Z
 To get Slurm up and running, it is vital we have te configuration files in the right locations. 
 
 ## Writing the .conf
-You get the configuration files from [this Github repository](https://github.com/Saleha-Abid/ultron.git). These are to be copied to the `/etc/slurm/` directory. Follow the instructions below,
+You get the configuration files from [this Github repository](https://github.com/Saleha-Abid/atlas.git). These are to be copied to the `/etc/slurm/` directory. Follow the instructions below,
 - `gres.conf` only goes to the compute nodes.
 - `slurmdbd.conf` only goes to raven01.
 - The rest of the files are to exist uniformaly everywhere.
