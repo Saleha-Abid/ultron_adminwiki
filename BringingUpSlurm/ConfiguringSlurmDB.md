@@ -2,7 +2,7 @@
 title: Configuring Slurm DB
 description: We need to keep record of all jobs.
 published: true
-date: 2026-04-23T05:10:32.658Z
+date: 2026-04-26T10:16:50.512Z
 tags: slurm, slurmdbd, config, database
 editor: markdown
 dateCreated: 2026-04-23T03:30:05.109Z
@@ -51,6 +51,6 @@ sudo systemctl restart slurmdbd
 ```
 
 ## Summing Up
-Great job! This completes the task of configuring the brains of this HPC - Slurm. Ultron is practically a being now.
+Great job! This completes the task of configuring the brains of this HPC - Slurm. Atlas is practically a being now.
 
 Next: 
