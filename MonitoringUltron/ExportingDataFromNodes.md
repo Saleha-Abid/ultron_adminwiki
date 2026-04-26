@@ -2,7 +2,7 @@
 title: Exporting Data from Nodes
 description: Starting services on all nodes to be sent to the dashboard
 published: true
-date: 2026-04-22T17:04:01.432Z
+date: 2026-04-26T10:02:49.105Z
 tags: prometheus, grafana, dashboards, reports, monitoring, export data, sensors, gpu, slurm
 editor: markdown
 dateCreated: 2026-04-20T18:25:16.577Z
