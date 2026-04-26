@@ -2,7 +2,7 @@
 title: Installing Base OS
 description: Laying the OS groundwork for the cluster
 published: true
-date: 2026-04-26T09:59:23.022Z
+date: 2026-04-26T10:11:53.395Z
 tags: ubuntu, os, base os, os installation, ssh
 editor: markdown
 dateCreated: 2026-04-17T12:12:14.893Z
@@ -13,7 +13,7 @@ Every computer needs an operating system - so does this cluster. Our choice for 
 
 We choose **Ubunutu Server 24.04 LTS**. It is stable and well-documented with a decent online community. You can troubleshoot any native linux problems easily. 
 
-For installation follow [this tutorial](https://ubuntu.com/tutorials/install-ubuntu-server#1-overview) on Ubuntu's official site. Some settings are custom for Ultron. The rest of this page covers them.
+For installation follow [this tutorial](https://ubuntu.com/tutorials/install-ubuntu-server#1-overview) on Ubuntu's official site. Some settings are custom for Atlas. The rest of this page covers them.
 
 ## Tutorial Steps 1-6: The Basics
 Follow them as they are. Make sure you know your keyboard before you select the layout. The ones in the lab are **English US (en-US)**.
@@ -26,7 +26,7 @@ As established previously, we want our nodes to have static IPs. To configure th
 2. You'll be presented with the following setting when you select the IPv4 method to be *Manual*.
 <div align="center">
   <br>
-  <img src="/building-ultron/networking.png" width="500px">
+  <img src="/building-atlas/networking.png" width="500px">
   <br>
 </div>
 3. Recall the networking settings from before. Fill them as follows:
@@ -70,19 +70,19 @@ We will be configuring storage manually. The steps are as follows,
 You'll be presented with the following,
 <div align="center">
   <br>
-  <img src="/building-ultron/profile.png" width="500px">
+  <img src="/building-atlas/profile.png" width="500px">
   <br>
 </div>
 Configure as follows,
 
 | Specification | Details |
 | :--- | :--- |
-| **Your name** | ultron |
+| **Your name** | atlas |
 | **Your server's name** | raven01 (whatever your node is named) |
 | **Pick a username** | admin_ultron |
 | **Choose a password** | *confidential - ask sysadmins*  |
 
-As it stands ***admin_ultron***, is the administrator account on Ultron. It has no password set on sudo. It is junior only to the root user. It is the first user account we create on Ultron. This account has remote shell (SSH) access even on compute nodes. It is most powerful.
+As it stands ***admin_ultron***, is the administrator account on Atlas. It has no password set on sudo. It is junior only to the root user. It is the first user account we create on Atlas. This account has remote shell (SSH) access even on compute nodes. It is most powerful.
 
 After this,
 - Do not upgrade to *Ubuntu Pro*.
@@ -169,7 +169,7 @@ SSH, as a sysadmin should be so that you can remotely access all nodes of your c
 
 Now that the groundwork is laid, let's configure our planned architecture for storage.
 
-Next: [Managing Storage: Setting up DRBD](/BuildingUltron/SettingUpDRBD)
+Next: [Managing Storage: Setting up DRBD](/BuildingAtlas/SettingUpDRBD)
 
 
 
