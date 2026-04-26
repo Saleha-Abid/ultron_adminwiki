@@ -2,14 +2,14 @@
 title: Managing Storage: Configuring Keepalived
 description: Keepalived keeps track of your head nodes dying.
 published: true
-date: 2026-04-26T10:00:05.546Z
+date: 2026-04-26T10:13:30.317Z
 tags: storage, drbd, file systems, keepalived, fail-safe, backup
 editor: markdown
 dateCreated: 2026-04-22T07:03:19.171Z
 ---
 
 # Keepalived For Failover
-Keepalived is a failover and monitoring daemon for Linux clusters that provides high availability functionality and load balancing. Ultron's users login to the one head, the compute nodes mount one filesystem, only one of the two heads can be *Primary* in DRBD: all these need on address - **one IP**. Keepalived floats a *virtual IP* that is owned by raven01 but is snatched by raven02 as soon as raven01 goes MIA.
+Keepalived is a failover and monitoring daemon for Linux clusters that provides high availability functionality and load balancing. Atlas's users login to the one head, the compute nodes mount one filesystem, only one of the two heads can be *Primary* in DRBD: all these need on address - **one IP**. Keepalived floats a *virtual IP* that is owned by raven01 but is snatched by raven02 as soon as raven01 goes MIA.
 
 ## Configuring Keepalived
 This is simple. First install the service
@@ -61,4 +61,4 @@ Keepalived is not just a fight for IP, it is doing a lot more. If you are intere
  
 Essentially, it assigns duties to the active head node.
 
-Next: [Setting Up NFS](/BuildingUltron/SettingUpNFS)
+Next: [Setting Up NFS](/BuildingAtlas/SettingUpNFS)
