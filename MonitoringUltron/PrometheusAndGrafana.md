@@ -2,7 +2,7 @@
 title: Prometheus and Grafana
 description: Understanding popular monitoring tools
 published: true
-date: 2026-04-22T06:57:11.002Z
+date: 2026-04-26T10:01:55.018Z
 tags: prometheus, grafana, dashboards, reports, monitoring, monitor
 editor: markdown
 dateCreated: 2026-04-20T18:21:27.793Z
