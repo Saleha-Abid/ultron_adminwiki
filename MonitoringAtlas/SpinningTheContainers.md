@@ -2,7 +2,7 @@
 title: Spinning the Containers
 description: We use docker to spin up Grafana and Prometheus
 published: true
-date: 2026-04-26T10:02:13.933Z
+date: 2026-04-26T10:17:41.307Z
 tags: prometheus, grafana, dashboards, monitoring, docker, containers
 editor: markdown
 dateCreated: 2026-04-20T18:23:55.091Z
@@ -31,4 +31,4 @@ In your browser, go to `raven02-ip:3000` and `raven02-ip:9090` to view Grafana a
 ## Summing Up
 Congratualations, your containers are up! Metrics must be exported from each node now to be displayed on the dashboard.
 
-Next: [Exporting Data From Nodes](/MonitoringUltron/ExportingDataFromNodes)
+Next: [Exporting Data From Nodes](/MonitoringAtlas/ExportingDataFromNodes)
