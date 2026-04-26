@@ -2,7 +2,7 @@
 title: Managing Storage: Configuring Keepalived
 description: Keepalived keeps track of your head nodes dying.
 published: true
-date: 2026-04-26T10:13:30.317Z
+date: 2026-04-26T10:23:19.382Z
 tags: storage, drbd, file systems, keepalived, fail-safe, backup
 editor: markdown
 dateCreated: 2026-04-22T07:03:19.171Z
@@ -16,7 +16,7 @@ This is simple. First install the service
 ```bash
 sudo apt update && sudo apt install keepalived -y
 ```
-Next, copy the configuration files from [this Github repository](https://github.com/Saleha-Abid/ultron.git). Go to `/etc/keepalived` and copy the `keepalived.conf` there for both nodes respectively.
+Next, copy the configuration files from [this Github repository](https://github.com/Saleha-Abid/atlas.git). Go to `/etc/keepalived` and copy the `keepalived.conf` there for both nodes respectively.
 ```bash
 sudo nano /etc/keepalived/keepalived.conf
 ```
