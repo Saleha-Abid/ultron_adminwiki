@@ -2,7 +2,7 @@
 title: Spinning the Containers
 description: We use docker to spin up Grafana and Prometheus
 published: true
-date: 2026-04-26T10:17:41.307Z
+date: 2026-04-26T10:24:41.028Z
 tags: prometheus, grafana, dashboards, monitoring, docker, containers
 editor: markdown
 dateCreated: 2026-04-20T18:23:55.091Z
@@ -12,7 +12,7 @@ dateCreated: 2026-04-20T18:23:55.091Z
 As the name explains, we have two services that we must run: Prometheus and Grafana. A good practice is to start these services in containers. Not only is this method easier, it is super scalable and indtustrially recongized. It also keeps all services mutually isolated so there are no conflicts.
 
 ## Starting the Containers
-All you need is a simple `docker-compose.yml` file. This will pull all foreign containers from over the internet and start your services. Get this file from [this Github repository](https://github.com/Saleha-Abid/ultron.git). All you need for monitoring is compiled within the `monitoring` diectory.
+All you need is a simple `docker-compose.yml` file. This will pull all foreign containers from over the internet and start your services. Get this file from [this Github repository](https://github.com/Saleha-Abid/atlas.git). All you need for monitoring is compiled within the `monitoring` diectory.
 
 On the backup head (raven02), make a directory `monitoring`. Create a `docker-compose.yml` and `prometheus.yml`. These are included in the Github Repository linked above. To start the containers run,
 
