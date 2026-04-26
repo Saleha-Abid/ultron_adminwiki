@@ -2,7 +2,7 @@
 title: Managing Storage: Setting Up DRBD
 description: Configure a network RAID - DRBD (Distributed Replicated Block Device)
 published: true
-date: 2026-04-26T10:12:56.661Z
+date: 2026-04-26T10:22:59.622Z
 tags: storage, managing storage, drbd, file systems
 editor: markdown
 dateCreated: 2026-04-17T18:54:14.049Z
@@ -23,7 +23,7 @@ To set up DRBD, follow the manual [here](https://ubuntu.com/server/docs/how-to/h
 ```bash
 sudo apt install drbd-utils
 ```
-2. On both, edit the `/etc/drbd.conf`. You can obtain it through [this Github repository](https://github.com/Saleha-Abid/ultron.git).
+2. On both, edit the `/etc/drbd.conf`. You can obtain it through [this Github repository](https://github.com/Saleha-Abid/atlas.git).
 ```bash
 sudo nano /etc/drbd.conf
 ```
