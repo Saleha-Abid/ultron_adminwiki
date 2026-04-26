@@ -2,7 +2,7 @@
 title: Synchronizing Users and Groups
 description: UIDs and GIDs must be same across the cluster
 published: true
-date: 2026-04-22T16:55:19.948Z
+date: 2026-04-26T10:15:04.442Z
 tags: sync, gid, uid, users
 editor: markdown
 dateCreated: 2026-04-22T13:58:40.123Z
@@ -20,7 +20,7 @@ Not everyone is to be synced for Slurm to work. The following users are importan
 1. Slurm user (not created yet)
 2. Munge user (created and synced)
 3. admin_ultron (created but sync status to be checked)
-4. All Ultron's users (to be created)
+4. All Atlas's users (to be created)
 
 Let's run checks for admin_ultron.
 
