@@ -2,7 +2,7 @@
 title: Managing Storage: Setting Up NFS
 description: Broadcast your filesystem across the cluster.
 published: true
-date: 2026-04-22T15:38:05.704Z
+date: 2026-04-26T10:00:25.924Z
 tags: storage, drbd, file systems, nfs, network
 editor: markdown
 dateCreated: 2026-04-22T07:04:45.478Z
