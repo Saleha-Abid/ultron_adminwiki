@@ -2,7 +2,7 @@
 title: Prometheus and Grafana
 description: Understanding popular monitoring tools
 published: true
-date: 2026-04-26T10:01:55.018Z
+date: 2026-04-26T10:17:12.534Z
 tags: prometheus, grafana, dashboards, reports, monitoring, monitor
 editor: markdown
 dateCreated: 2026-04-20T18:21:27.793Z
@@ -12,7 +12,7 @@ dateCreated: 2026-04-20T18:21:27.793Z
 Prometheus and Grafana are two popular industrial grade tools used for tracking infrastucture, microservices and applicaton performances. **Prometheus** is the metrics collector, building a time-series database. **Grafana** is the visualization layer, creating interactive and actionable dashboards.
 
 ## The Need to Monitor
-There is no doubt that monitoring is an absolutely un-negotiable need of supercomputers. Naturally, Ultron needs one too. Before the development of this dashboard, sysadmins had to go through the pain of SSH-ing and running commands like `htop` and `drbdadm status`. And then they'd lose their sanity everytime the compute nodes unmounted the NFS disks. A dashboard - a pretty one, is exactly what was needed.
+There is no doubt that monitoring is an absolutely un-negotiable need of supercomputers. Naturally, Atlas needs one too. Before the development of this dashboard, sysadmins had to go through the pain of SSH-ing and running commands like `htop` and `drbdadm status`. And then they'd lose their sanity everytime the compute nodes unmounted the NFS disks. A dashboard - a pretty one, is exactly what was needed.
 
 ## Identifying Metrics to Monitor
 We identified three broad categories of metrics we believed were needed. These are enlisted,
@@ -25,4 +25,4 @@ That amounts to 3 dashboards.
 ## Summing Up
 This is it for introducing the monitoring tools. Let's bring them to reality.
 
-Next: [Spinning The Containers](/MonitoringUltron/SpinningTheContainers)
+Next: [Spinning The Containers](/MonitoringAtlas/SpinningTheContainers)
