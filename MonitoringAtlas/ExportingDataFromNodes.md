@@ -2,7 +2,7 @@
 title: Exporting Data from Nodes
 description: Starting services on all nodes to be sent to the dashboard
 published: true
-date: 2026-04-26T10:18:06.072Z
+date: 2026-04-26T10:24:57.832Z
 tags: prometheus, grafana, dashboards, reports, monitoring, export data, sensors, gpu, slurm
 editor: markdown
 dateCreated: 2026-04-20T18:25:16.577Z
@@ -28,7 +28,7 @@ Next, you must edit the config file.
 ```bash
 sudo nano /etc/systemd/system/node_exporter.service
 ```
-Copy the `node_exporter.service` from [this Github Repo](https://github.com/Saleha-Abid/ultron.git). 
+Copy the `node_exporter.service` from [this Github Repo](https://github.com/Saleha-Abid/atlas.git). 
 
 Then start the service,
 ```bash
