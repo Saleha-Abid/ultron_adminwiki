@@ -2,7 +2,7 @@
 title: Managing Storage: Setting Up DRBD
 description: Configure a network RAID - DRBD (Distributed Replicated Block Device)
 published: true
-date: 2026-04-26T09:59:43.641Z
+date: 2026-04-26T10:12:56.661Z
 tags: storage, managing storage, drbd, file systems
 editor: markdown
 dateCreated: 2026-04-17T18:54:14.049Z
@@ -66,5 +66,5 @@ Yes, this causes the two nodes to become STANDALONE. Manual connection is requir
 ## Summing Up
 We have completed the first step in building our filesystem: ensuring redundancy. The fail-self logic for when our primary node dies and when it comes back up must be implemented.
 
-Next: [Configuring Keepalived](/BuildingUltron/ConfiguringKeepalived)
+Next: [Configuring Keepalived](/BuildingAtlas/ConfiguringKeepalived)
 
