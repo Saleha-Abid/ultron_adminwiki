@@ -2,7 +2,7 @@
 title: Importing and Configuring Dashboards
 description: Monitor Atlas' status through customized dashboards
 published: true
-date: 2026-04-26T10:03:13.293Z
+date: 2026-04-26T10:18:39.200Z
 tags: prometheus, grafana, dashboards, monitoring
 editor: markdown
 dateCreated: 2026-04-20T18:26:46.709Z
@@ -11,11 +11,11 @@ dateCreated: 2026-04-20T18:26:46.709Z
 # Building Dashboards
 The final step in this section is to build the visual - beautiful dashboards that shall display metrics. It is very important that these dashboards are clean and friendly - a messy panel is no better than your black-and-white shell. For this purpose, we use pre-built dashboards will feq customizations.
 
-## Import Ultron's Dashboards
-Since we have already built on the existing panels to best suit the needs of monitoring Ultron, you don't need to work much. Just import the JSON file and your dashboard is up!
+## Import Atlas's Dashboards
+Since we have already built on the existing panels to best suit the needs of monitoring Atlas, you don't need to work much. Just import the JSON file and your dashboard is up!
 
 1. Go to [this Github Repository](https://github.com/Saleha-Abid/Grafana-Dashboards.git).You'll find the JSON files. Clone the repo or download them.
-> ***Note:*** Grafana allows provisioning which basically allows you to back-up your dashboards somewhere. We used Github. Ultron's dashboards are synced to this repo.
+> ***Note:*** Grafana allows provisioning which basically allows you to back-up your dashboards somewhere. We used Github. Atlas's dashboards are synced to this repo.
 {.is-success}
 
 2. On Grafana (go to `raven02-ip:3000` and login as admin), go to the **Dashboards** section. Top-right, you'll find **New**. Select **Import** from the drop-down list.
@@ -31,4 +31,4 @@ If you want to start afresh, you can check out **node_exporter's** and **slurm's
 4. Happy customizing!
 
 ## Summing Up
-The dashboards are up! Now you can monitor Ultron in peace and troubleshoot easily.
+The dashboards are up! Now you can monitor Atlas in peace and troubleshoot easily.
