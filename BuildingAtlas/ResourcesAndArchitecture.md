@@ -2,18 +2,18 @@
 title: Resources and Architecture
 description: Understanding available resources and conceptualizing the architecture
 published: true
-date: 2026-04-26T09:58:54.185Z
+date: 2026-04-26T10:09:28.410Z
 tags: resources, architecture, concept, atlas
 editor: markdown
 dateCreated: 2026-04-17T05:14:44.074Z
 ---
 
-# Ultron - A top-down
-This page talks sketches the hard lines of Ultron: identifying available resources and grouping them most efficiently to form a cluster. Let's first have a closer look at the generic HPC schematic given on the main page.
+# Atlas - A top-down
+This page talks sketches the hard lines of Atlas: identifying available resources and grouping them most efficiently to form a cluster. Let's first have a closer look at the generic HPC schematic given on the main page.
 
 <div align="center">
   <br>
-  <img src="/introducing-ultron/hpc-schematic.jpg" width="500px">
+  <img src="/introducing-atlas/hpc-schematic.jpg" width="500px">
   <br>
 </div>
 
@@ -32,7 +32,7 @@ The rest of them go for the position of the compute nodes. Sweet.
 
 ## Identified Compute Resources
 
-Given below is summary of the two categories of computers available for Ultron. 
+Given below is summary of the two categories of computers available for Atlas. 
 
 ### Head Nodes: Raven-1 to Raven-3
 | Specification | Details |
@@ -59,7 +59,7 @@ Given below is summary of the two categories of computers available for Ultron.
 The choice of head/login and compute nodes is obvious - ***Argons*** having better processor, memory and GPU are chosen for computation. ***Ravens'*** GPU might go unused in its job as a scheduler but in relative retrospect, Ravens are obviously to be the head nodes.
 
 ## Storage
-This aspect of Ultron is what baffled us the most. Scroll above to the generic HPC schematic. Nodes read from a common storage over the network. Large and professional HPCs use NAS (Network Attached Storage) or PFS (Parallel File System) to achieve this. These are difficult to setup and maintain but recommended for a scalable and longer-lasting cluster. What was our solution?
+This aspect of Atlas is what baffled us the most. Scroll above to the generic HPC schematic. Nodes read from a common storage over the network. Large and professional HPCs use NAS (Network Attached Storage) or PFS (Parallel File System) to achieve this. These are difficult to setup and maintain but recommended for a scalable and longer-lasting cluster. What was our solution?
 
 > ***Rule:*** Use SSDs as your OS disk.
 {.is-info}
@@ -99,7 +99,7 @@ Given below is a summary of the network details,
 We assign IPs in order. ***raven01*** holds the first IP (being the primary head); the second IP is given to ***raven02*** (backup head); the rest (in order) are assigned to ***argon01**-**argon10***.
 
 ## Backup Power
-Ultron is an HPC and HPCs stay online 24/7. We need power (ofcourse) but more importantly we need backup power. Better options exist out there but for now we settled on ***2kW UPS providing backup to 2 nodes***. This gives about ***10 minutes*** of backup power (we need more). 
+Atlas is an HPC and HPCs stay online 24/7. We need power (ofcourse) but more importantly we need backup power. Better options exist out there but for now we settled on ***2kW UPS providing backup to 2 nodes***. This gives about ***10 minutes*** of backup power (we need more). 
 
 Here are some notes on the power consumption of our compute resources,
 - Ravens consume a maximum of 800W.
@@ -117,7 +117,7 @@ We hope these arrangements will suffice for our current requirements.
 ## Summing Up
 You must now have a thorough idea of what is available to us and how we plan to use it in our goal of building an HPC. Let's move on to the practical stuff.
 
-Next: [Installing Base OS](/BuildingUltron/InstallingBaseOS)
+Next: [Installing Base OS](/BuildingAtlas/InstallingBaseOS)
 
 
 
