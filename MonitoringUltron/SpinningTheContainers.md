@@ -2,7 +2,7 @@
 title: Spinning the Containers
 description: We use docker to spin up Grafana and Prometheus
 published: true
-date: 2026-04-22T06:57:51.253Z
+date: 2026-04-26T10:02:13.933Z
 tags: prometheus, grafana, dashboards, monitoring, docker, containers
 editor: markdown
 dateCreated: 2026-04-20T18:23:55.091Z
