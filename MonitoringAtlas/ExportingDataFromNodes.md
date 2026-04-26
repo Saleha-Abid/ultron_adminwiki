@@ -2,7 +2,7 @@
 title: Exporting Data from Nodes
 description: Starting services on all nodes to be sent to the dashboard
 published: true
-date: 2026-04-26T10:02:49.105Z
+date: 2026-04-26T10:18:06.072Z
 tags: prometheus, grafana, dashboards, reports, monitoring, export data, sensors, gpu, slurm
 editor: markdown
 dateCreated: 2026-04-20T18:25:16.577Z
@@ -98,5 +98,5 @@ curl http://localhost:9400/metrics
 ## Summing Up
 All our sensors are working perfectly! Now that we're done with Prometheus, we must work with Grafana to build dashboards.
 
-Next: [Importing And Configuring Dashboards](/MonitoringUltron/ImportingAndConfiguringDashboards)
+Next: [Importing And Configuring Dashboards](/MonitoringAtlas/ImportingAndConfiguringDashboards)
 
